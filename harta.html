@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>Home</title>
+  <link href="screen.css" media="screen" rel="stylesheet"/>
+  <script language="JavaScript" type="text/javascript">
+    <!--
+     var timeout = 500;
+     var closetimer = 0;
+     var ddmenuitem = 0; 
+    // deschide stratul ascuns
+    function mopen(id)
+    { 
+       // anuleaza close-timer-ul (pentru inchiderea pop-upurilor
+       // dupa o perioada de timp pre-determinata)
+       mcancelclosetime(); 
+       // inchide stratul vechi
+       if(ddmenuitem) ddmenuitem.style.visibility = 'hidden'; 
+       // obtine urmatorul strat si afiseaza-l
+       ddmenuitem = document.getElementById(id);
+       ddmenuitem.style.visibility = 'visible'; 
+    }
+    // inchide stratul afisat
+    function mclose()
+    {
+      if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+    } 
+    // mergi la close timer
+    function mclosetime()
+     {
+       closetimer = window.setTimeout(mclose, timeout);
+     } 
+    // anuleaza close timer
+    function mcancelclosetime()
+    {
+       if(closetimer)
+      {
+            window.clearTimeout(closetimer);
+            closetimer = null;
+      }
+    } 
+     // inchide stratul la click-out
+     document.onclick = mclose;
+  
+    --> 
+	</script>
+ </head>
+
+ <body>
+  <div id ="container">
+	<div id="top">
+	  <h1 class="header">Turism &#238;n Banat</h1>
+	  <div id ="navbar">
+			<ul id = "navul">
+				<li><a href="restaurante.php">Restaurante</a></li>
+				<li><a href="hoteluri.php">Hoteluri</a></li>
+				<!-- <li><a href="traseu.php">Traseu Turistic</a></li> -->
+				<li><a href="index.html">Home</a></li>
+				<li><a class="selected">Despre Banat</a></li>
+                <li>
+				   <a onmouseover="mopen('m1')" onmouseout="mclosetime()" href="login.php">Contul meu</a>
+				   <div id="m1"  onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+				       <a href="login.php">Autentificare</a>
+					   <a href="adauga_persoana.php">&#206;nregistrare utilizator</a>
+				   </div>
+				</li>
+				</ul>
+			</div>
+	</div>
+    
+    <div id="leftcontent">
+    
+    <img src="Untitled.png" width="1000" height="910" alt="" usemap="#mapBanat"/>
+
+<map name="mapBanat">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:Cristina -->
+<area shape="rect" coords="416,264,473,306" href="./regiuni_turistice/timisoara.html"/>
+<area shape="circle" coords="537,261,13" href="./regiuni_turistice/recas.html" />
+<area shape="circle" coords="657,505,13" href="./regiuni_turistice/resita.html" />
+<area shape="circle" coords="642,599,12" href="./regiuni_turistice/anina.html" />
+<area shape="poly" coords="577,768,542,786,611,816,687,829,697,879,733,909,776,852,798,808,821,798,829,777,830,767,800,768,799,793,765,820,746,859,731,887,711,857,701,809,661,801,622,796,576,768" href="./regiuni_turistice/clisura.html" title="Clisura Dunarii" />
+<area shape="rect" coords="638,637,669,664" href="./regiuni_turistice/cheile_nerei.html" title="Cheile Nerei" />
+<area shape="rect" coords="848,439,882,471" href="./regiuni_turistice/poiana_marului.html" title="Poiana Marului" />
+<area shape="rect" coords="725,540,758,566" href="./regiuni_turistice/valiug.html" title="Valiug"/>
+<area shape="rect" coords="692,578,730,599" href="./regiuni_turistice/semenic.html" title="Muntele Semenic"/>
+<area shape="rect" coords="863,479,902,506" href="./regiuni_turistice/munte_mic.html" title="Muntele Mic"/>
+</map>
+
+ </div>
+	
+ </body>
+</html>

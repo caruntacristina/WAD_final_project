@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>Clisura</title>
+  <link href="screen.css" media="screen" rel="stylesheet"/>
+    <script language="JavaScript" type="text/javascript">
+    <!--
+     var timeout = 500;
+     var closetimer = 0;
+     var ddmenuitem = 0; 
+    // deschide stratul ascuns
+    function mopen(id)
+    { 
+       // anuleaza close-timer-ul (pentru inchiderea pop-upurilor
+       // dupa o perioada de timp pre-determinata)
+       mcancelclosetime(); 
+       // inchide stratul vechi
+       if(ddmenuitem) ddmenuitem.style.visibility = 'hidden'; 
+       // obtine urmatorul strat si afiseaza-l
+       ddmenuitem = document.getElementById(id);
+       ddmenuitem.style.visibility = 'visible'; 
+    }
+    // inchide stratul afisat
+    function mclose()
+    {
+      if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+    } 
+    // mergi la close timer
+    function mclosetime()
+     {
+       closetimer = window.setTimeout(mclose, timeout);
+     } 
+    // anuleaza close timer
+    function mcancelclosetime()
+    {
+       if(closetimer)
+      {
+            window.clearTimeout(closetimer);
+            closetimer = null;
+      }
+    } 
+     // inchide stratul la click-out
+     document.onclick = mclose;
+  
+    --> 
+	</script>
+ </head>
+
+ <body>
+  <div id ="container">
+	<div id="top">
+	  <h1 class="header">Clisura Dun&#259;rii</h1>
+
+<div id ="navbar">
+			<ul id = "navul">
+				<li><a href="../restaurante.php">Restaurante</a></li>
+				<li><a href="../hoteluri.php">Hoteluri</a></li>
+				<li><a href="../index.html">Home</a></li>
+				<li>
+				       <a onmouseover="mopen('m2')" onmouseout="mclosetime()"  class="selected" href="../harta.html">Despre Banat</a>
+				       <div id="m2"  onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                     
+                            <a href="recas.html">Reca&#351;</a>
+                            <a href="resita.html">Re&#351;i&#355;a</a>
+                            <a href="anina.html">Anina</a>
+                            <a href="poiana_marului.html">Poiana M&#259;rului</a>
+						    <a href="muntele_mic.html">Muntele Mic</a>
+						    <a href="semenic.html">Semenic</a>
+						    <a href="valiug.html">V&#259;liug</a>
+						    <a href="cheile_nerei.html">Cheile Nerei</a>
+						    <a href="clisura.html">Clisura Dun&#259;rii</a>
+                        </div>
+				    </li>
+                <li>
+				        <a onmouseover="mopen('m1')" onmouseout="mclosetime()" class="../login.php">Contul meu</a>
+				        <div id="m1"  onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+				            <a href="../login.php">Autentificare</a>
+					        <a href="../adauga_persoana.php">&#206;nregistrare utilizator</a>
+				        </div>
+				</li>
+			</ul>
+	   </div>
+		</div>
+	<div id="leftcontent">
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<p align="justify">
+			
+Clisura Dun&#259;rii sau Defileul Dun&#259;rii (&#238;n s&#226;rb&#259; Banatska Klisura) este o regiune geografic&#259; situat&#259; de-a lungul malului nordic al Dun&#259;rii, &#238;n sudul Banatului. Regiunea este limitat&#259; de r&#226;ul Nera la nord-vest &#351;i de Cazanele Dun&#259;rii la est.</p>
+
+<h2>Localit&#259;&#355;i</h2>
+<p align="justify">
+Cele mai mari a&#351;ez&#259;ri din Defileul Dun&#259;rii sunt municipiul Or&#351;ova &#351;i ora&#351;ul Moldova Nou&#259;. Tot din Clisura Dun&#259;rii fac parte &#351;i comunele Socol, Pojejena, Coronini, G&#226;rnic, Sichevi&#355;a, Berzasca din jude&#355;ul Cara&#351;-Severin, precum &#351;i Svini&#355;a, Dubova, E&#351;elni&#355;a, Ilovi&#355;a &#351;i Brezni&#355;a-Ocol din jude&#355;ul Mehedin&#355;i.</p>
+
+<h3>Popula&#355;ia</h3>
+<p align="justify"> Defileului Dun&#259;rii este locuit de rom&#226;ni majoritari &#351;i de s&#226;rbi. Unele localit&#259;&#355;i au o majoritate s&#226;rb&#259;. Acestea sunt: Socol, Pojejena &#351;i Svini&#355;a. Mai exist&#259; &#351;i o comunitate de cehi, mai ales &#238;n jurul localit&#259;&#355;ii G&#226;rnic, mai precis &#238;n localit&#259;&#355;ile Big&#259;r &#351;i Eibenthal. Un num&#259;r important de germani putem &#238;nt&#226;lni &#351;i &#238;n Or&#351;ova.</p>
+
+<h2>Istorie</h2>
+<p align="justify" >
+	Dup&#259; desele cuceriri &#351;i recuceriri reciproce turco-austriece (sec. XVII-XVII), regiunea Defileului Dun&#259;rii a fost organizat&#259; p&#226;n&#259; la finele Primului R&#259;zboi Mondial ca Frontierei militare b&#259;n&#259;&#355;ene &#351;i era &#238;mp&#259;r&#355;it&#259; &#238;n sectorul "vlahilor" (rom&#226;ni) &#351;i cel al ilirilor (s&#226;rbi).
+</p>
+		
+	</div>
+	<div id = "rightcontent">
+	  <h2>Pe Clisura Dun&#259;rii</h2>
+	  <ul id = "picturelist">
+		<li><a href="#"><img src="img/clisura1.jpg" width="200px" height="100px" alt="sunset" />Defileul Dun&#259;rii</a></li>
+			<li><a href="#"><img src="img/clisura2.jpg" width="200px" height="100px" alt="sunset"/>Clisura Dun&#259;rii</a></li>
+			<li><a href="#"><img src="img/clisura3.jpg" width="200px" height="100px" alt="sunset"/>Cazanele Dun&#259;rii</a></li>
+		</ul>
+	</div>
+  </div>
+ </body>
+</html>
